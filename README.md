@@ -1,4 +1,4 @@
-### Install Docker Engine on Ubuntu
+# Install Docker Engine on Ubuntu
 
 ## Uninstall old versions
 
@@ -12,7 +12,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
 
-# Set up the repository
+### Set up the repository
 
 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
@@ -72,7 +72,7 @@ You have now successfully installed and started Docker Engine. The docker user g
 These optional post-installation procedures shows you how to configure your Linux host machine to work better with Docker.
 
 
-# Manage Docker as a non-root user
+### Manage Docker as a non-root user
 
 If you don’t want to preface the docker command with sudo, create a Unix group called docker and add users to it. When the Docker daemon starts, it creates a Unix socket accessible by members of the docker group. On some Linux distributions, the system automatically creates this group when installing Docker Engine using a package manager. In that case, there is no need for you to manually create the group.
 
